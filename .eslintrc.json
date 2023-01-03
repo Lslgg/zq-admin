@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "google"
+  ],
+  "globals": {
+    "$t": "writable",
+    "defineEmits": "readonly",
+    "defineProps": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "vue",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 99999
+      }
+    ],
+    "linebreak-style": 0,
+    "new-cap": 0,
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "vue/multi-word-component-names": 0,
+    "vue/no-v-model-argument": 0,
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": 1
+      }
+    ],
+    "comma-dangle": "off",
+    "vue/no-v-for-template-key": "off",
+    "camelcase": "off",
+    "arrow-parens": "off"
+  }
+}

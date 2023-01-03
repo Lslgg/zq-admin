@@ -1,0 +1,134 @@
+{
+	"vue to template card": {
+		"prefix": "v-t-card",
+		"body": [
+			"<script setup lang='ts'>",
+			"import { TemplateCard } from '@/components/Template'",
+			"</script>",
+			"",
+			"<template>",
+			"<TemplateCard class='$1' title=''>",
+			"",
+			"</TemplateCard>",
+			"</template>",
+			"",
+			"<style lang='scss' scoped>",
+			"</style>",
+			""
+		],
+		"description": "vue to inner file"
+	},
+	"vue to out file": {
+		"prefix": "v-setup",
+		"body": [
+			"",
+			"<script setup lang='ts'>",
+			"</script>",
+			"",
+			"<template>",
+			"<div class='$1'>",
+			"",
+			"</div>",
+			"</template>",
+			"",
+			"<style lang='scss' scoped>",
+			"</style>",
+			""
+		],
+		"description": "vue to inner file"
+	},
+	"vue to inner file": {
+		"prefix": "v-inner",
+		"body": [
+			"<template>",
+			"<div class='$1'>",
+			"$1",
+			"</div>",
+			"</template>",
+			"",
+			"<script lang='ts'>",
+			"import { Vue } from 'vue-class-component'",
+			"/** $1 **/",
+			"export default class $2 extends Vue {",
+			"// #region 属性",
+			"",
+			"// #endregion",
+			"// #region 事件",
+			"",
+			"// #endregion",
+			"// #region 方法",
+			"",
+			"// #endregion",
+			"}",
+			"</script>",
+			"",
+			"<style lang='scss' scoped>",
+			"</style>",
+			""
+		],
+		"description": "vue to inner file"
+	},
+	"vue to html": {
+		"prefix": "v-h",
+		"body": [
+			"<template>",
+			"<div class='$1'>",
+			"",
+			"</div>",
+			"</template>"
+		],
+		"description": "vue to html"
+	},
+	"vue to typsecipt": {
+		"prefix": "v-t",
+		"body": [
+			"<script lang='ts'>",
+			"import { Vue } from 'vue-class-component'",
+			"export default class extends Vue {",
+				"// #region 外部传参",
+				"",
+				"// #endregion",
+				"// #region 状态属性",
+				"",
+				"// #endregion",
+				"// #region 内部属性",
+				"",
+				"// #endregion",
+				"// #region 事件",
+				"",
+				"// #endregion",
+				"// #region 方法",
+				"",
+				"// #endregion",
+			"}",
+			"</script>"
+		],
+		"description": "vue to typsecipt"
+	},
+	"vue to prop": {
+		"prefix": "@pr",
+		"body": [
+			"@Prop({ default: '' }) public $1: string",
+		],
+		"description": "vue to Prop"
+	},
+	"vue to watch": {
+		"prefix": "@wa",
+		"body": [
+			"@Watch('$1', { immediate: true, deep: true })",
+			"public onChanged() {",
+			"",
+			"}"
+		],
+		"description": "vue to Prop"
+	},
+	"vue to created": {
+		"prefix": "cr",
+		"body": [
+			"public created() {",
+			"$1",
+			"}"
+		],
+		"description": "vue to crated"
+	}
+}

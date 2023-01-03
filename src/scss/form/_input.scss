@@ -1,0 +1,42 @@
+// _input.scss
+//
+// Template's input styles.
+//
+
+.ant-input {
+  border-radius: 6px;
+}
+
+.ant-form-item-label {
+  line-height: 28px;
+}
+
+.ant-form-item label {
+  font-size: 13px;
+  font-weight: normal;
+  color: #141414 !important;
+}
+
+.layout-dashboard-rtl {
+  .header-control {
+    .header-search {
+      .ant-input {
+        &:not(:first-child) {
+          padding-right: 32px;
+          padding-left: 11px;
+        }
+      }
+    }
+  }
+
+  .ant-input-affix-wrapper .ant-input-prefix {
+    right: 12px;
+    left: auto;
+  }
+}
+// .ant-form-horizontal .ant-form-item-label {
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+// }
+// / Template's input styles.

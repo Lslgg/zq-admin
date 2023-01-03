@@ -1,0 +1,55 @@
+{
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "node_modules": false,
+    "tsconfig.json": false,
+    ".gitignore": false,
+    "package-lock.json": true,
+    "yarn.lock": true,
+    "components.d.ts": false,
+    "postcss.config.js": true,
+    "yarn-error.log": true,
+    "protractor.conf.js": true,
+    "src/shims-tsx.d.ts": false,
+    "src/shims-vue.d.ts": false,
+    "src/favicon.ico": true,
+    "README.md": false,
+    ".browserslistrc": true,
+    "commitlint.config.js": true,
+    ".stylelintrc.json": true,
+    "document": true,
+    "**/src/shims-vue.d.ts": true,
+    "**/src/index.css": true,
+    "**/icons": true,
+    "**/*.env.**": false,
+    ".husky": true,
+  },
+  "volar.formatting.length ": 160,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.format.semicolons": "remove",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "tailwindCSS.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  // "tailwindCSS.emmetCompletions": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "i18n-ally.localesPaths": [
+    "src/locales",
+    "public/tinymce/langs"
+  ],
+}

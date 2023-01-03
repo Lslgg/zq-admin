@@ -1,0 +1,138 @@
+// _utilities.scss
+// 
+// Template's utility classes and helpers.
+// 
+
+// Base Colors
+$colors: (
+	"primary": $color-primary,
+	"secondary": $color-secondary,
+	"success": $color-success,
+	"warning": $color-warning,
+	"danger": $color-danger,
+	"dark": $color-dark,
+	"white": $color-white,
+	"muted": $color-muted,
+) ;
+
+@each $name, $value in $colors {
+	.bg-#{$name} {
+		background-color: $value !important;
+	}
+	.text-#{$name} {
+		color: $value !important;
+	}
+	.border-#{$name} {
+		border-color: $value;
+	}
+	.fill-#{$name} {
+		fill: $value;
+	}
+	.badge-dot-#{$name} .ant-badge-status-dot {
+		background-color: $value;
+	}
+	.ant-tag-#{$name} {
+		background-color: $value;
+		color: #ffffff;
+		border: none;
+	}
+}
+
+// Overriding the dark text color.
+.text-dark {
+	color: #142738;
+}
+// / Base Colors
+
+
+// Neutral Colors
+$neutral-colors: (
+	"gray-1": $color-gray-1,
+	"gray-2": $color-gray-2,
+	"gray-3": $color-gray-3,
+	"gray-4": $color-gray-4,
+	"gray-5": $color-gray-5,
+	"gray-6": $color-gray-6,
+	"gray-7": $color-gray-7,
+	"gray-8": $color-gray-8,
+	"gray-9": $color-gray-9,
+	"gray-10": $color-gray-10,
+	"gray-11": $color-gray-11,
+	"gray-12": $color-gray-12,
+	"muted": $color-muted,
+) ;
+
+@each $name, $value in $neutral-colors {
+	.bg-#{$name} {
+		background-color: $value !important;
+	}
+	.text-#{$name} {
+		color: $value !important;
+	}
+	.border-#{$name} {
+		border-color: $value !important;
+	}
+	.fill-#{$name} {
+		fill: $value !important;
+	}
+}
+// / Neutral Colors
+
+
+// Gradient Colors
+$theme-gradient-colors: (
+	"primary":    ($primary-gradient, $primary-gradient-state),
+	"secondary":  ($secondary-gradient, $secondary-gradient-state),
+	"success":    ($success-gradient, $success-gradient-state),
+	"info":       ($info-gradient, $info-gradient-state),
+	"warning":    ($warning-gradient, $warning-gradient-state),
+	"danger":     ($danger-gradient, $danger-gradient-state),
+	"light":      ($light-gradient, $light-gradient-state),
+	"dark":       ($dark-gradient, $dark-gradient-state)
+) !default;
+
+@mixin gradient-directional($start-color: $gray-700, $end-color: $gray-800, $deg: 45deg) {
+  	background-image: linear-gradient($deg, $start-color, $end-color);
+}
+@each $prop, $value in $theme-gradient-colors {
+	.bg-gradient-#{$prop} {
+		@include gradient-directional(nth($value, 1) 0%, nth($value, -1) 100%, $deg: 310deg);
+	}
+}
+// / Gradient Colors
+// / Shadows
+
+
+// Other utility stylings
+.img-contain {
+	max-width: 100%;
+}
+// / Other utility stylings
+
+// RTL
+// / RTL
+
+// / Template's utility classes and helpers.
+.checkbox-list__item {
+  .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ant-checkbox-wrapper {
+    margin-left: 0px;
+    padding: 2px 6px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 12px;
+  }
+
+  .ant-checkbox-wrapper-checked {
+    color: white;
+    background-color: var(--color);
+  }
+
+  .ant-checkbox {
+    display: none;
+  }
+}
